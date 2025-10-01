@@ -1,7 +1,9 @@
 from ultralytics import YOLO
 
-# Load a pretrained model
-model = YOLO("yolo11n.pt")
+# Load a model
+model = YOLO("yolo11n.yaml")  # build a new model from YAML
+model = YOLO("yolo11n.pt")  # load a pretrained model (recommended for training)
+model = YOLO("yolo11n.yaml").load("yolo11n.pt")  # build from YAML and transfer weights
 
-# Train the model on your custom dataset
-model.train(data="my_custom_dataset.yaml", epochs=100, imgsz=640)
+# Train the model
+results = model.train(data="coco8.yaml", epochs=100, imgsz=640)
