@@ -16,7 +16,6 @@ This method is not limited by the shape, but more after process makes higher pow
 However, some algorithm such as DB handle this issue.
 ## 1.3 Main method
 There are many methods, no more word to explan. 
-
 One table for comparsion
 
 ### OCR Methods Comparison
